@@ -1,0 +1,32 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+# path for the text file containing the goal
+#, sh-format
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  "$MISSION_DIR/goal/fr.txt"
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  "$MISSION_DIR/skip/fr.txt"
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  "$MISSION_DIR/treasure-msg/fr.txt"
+
+#, sh-format
+msgid   "Process names should be equal to the corresponding filename for mission $MISSION_NAME."
+msgstr  "Les nom des processus doivent être égaux au nom du fichier correspondant pour la mission $MISSION_NAME"
+
+#, sh-format
+msgid   "The command 'ps' is required for mission $MISSION_NAME.\n"
+        "(Debian / Ubuntu: install package 'procps')"
+msgstr  "La command 'ps' est nécessaire pour la mission $MISSION_NAME.\n"
+        "(Debian / Ubuntu : installez le paquet 'procps')"
+
+msgid   "The spell is still running!"
+msgstr  "Le sortilège est toujours en fonctionnement !"
+
+msgid   "spell"
+msgstr  "sortilege"

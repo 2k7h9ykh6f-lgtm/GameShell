@@ -1,0 +1,41 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Castle/Main_building/Library/Merlin_s_office"
+msgstr  ""
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  ""
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  ""
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  ""
+
+msgid   "Drawer"
+msgstr  ""
+
+#, sh-format
+msgid   "The content of $inventory_file is invalid.\n"
+        "You can check its content with the command\n"
+        "    § less $inventory_file"
+msgstr  ""
+
+#, sh-format
+msgid   "There is no $inventory_file in the drawer..."
+msgstr  ""
+
+msgid   "candle"
+msgstr  ""
+
+msgid   "grimoire"
+msgstr  ""
+
+msgid   "inventory.txt"
+msgstr  ""

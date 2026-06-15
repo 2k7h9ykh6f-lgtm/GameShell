@@ -1,0 +1,14 @@
+Images/gsh-*-orig.gif
+tmp
+TODO
+.bin
+.sbin
+.config
+.tmp
+.save
+World
+locale/
+*~
+/gameshell*
+game shell*
+boxes-data.awk

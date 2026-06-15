@@ -1,0 +1,56 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Forest/Hut/Chest"
+msgstr  "$GSH_HOME/Foret/Hutte/Coffre"
+
+#, sh-format
+msgid   "$GSH_HOME/Garden"
+msgstr  "$GSH_HOME/Jardin"
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  "$MISSION_DIR/goal/fr.txt"
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  "$MISSION_DIR/skip/fr.txt"
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  "$MISSION_DIR/treasure-msg/fr.txt"
+
+#, sh-format
+msgid   "The coin '$coin_name...' has a wrong file name..."
+msgstr  "La pièce '$coin_name...' n'a pas le bon nom..."
+
+#, sh-format
+msgid   "The coin '$coin_name...' has been tampered with..."
+msgstr  "La pièce '$coin_name...' a été modifiée..."
+
+#, sh-format
+msgid   "The coin '$coin_name...' is still in the garden!"
+msgstr  "La pièce '$coin_name...' est toujours dans le jardin !"
+
+#, sh-format
+msgid   "There are several '$coin_name...' in the garden!"
+msgstr  "Il y a plusieurs pièces '$coin_name...' dans le jardin !"
+
+#, sh-format
+msgid   "There are several '$coin_name...' in your chest!"
+msgstr  "Il y a plusieurs pièces '$coin_name...' dans le coffre !"
+
+#, sh-format
+msgid   "There is no '$coin_name...' in your chest!"
+msgstr  "Il n'y a pas de pièce '$coin_name...' dans le coffre !"
+
+msgid   "chest"
+msgstr  "coffre"
+
+msgid   "coin"
+msgstr  "piece"
+
+msgid   "hut"
+msgstr  "hutte"

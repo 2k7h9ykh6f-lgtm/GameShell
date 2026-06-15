@@ -1,0 +1,48 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Castle/Cellar"
+msgstr  ""
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  ""
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  ""
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  ""
+
+#, sh-format
+msgid   "Good, but you took $nb_seconds seconds. You needed to take less than $MAX_DELAY seconds..."
+msgstr  ""
+
+msgid   "Lair_of_the_spider_queen"
+msgstr  ""
+
+#, sh-format
+msgid   "Perfect, it took you only $nb_seconds seconds to complete this mission!"
+msgstr  ""
+
+msgid   "The queen spider is still in its lair..."
+msgstr  ""
+
+msgid   "Where is the baby bat?"
+msgstr  ""
+
+msgid   "You are back in the cellar."
+msgstr  ""
+
+msgid   "You are not in the queen spider lair!"
+msgstr  ""
+
+msgid   "baby_bat"
+msgstr  ""
+
+msgid   "spider_queen"
+msgstr  ""
