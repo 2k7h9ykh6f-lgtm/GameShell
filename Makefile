@@ -61,9 +61,13 @@ tests-lang: clean
 	./"game shell (1).sh" -L fr -RFBdq -c 'gsh systemconfig; for _ in $$(seq 50); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
 	./"game shell (1).sh" -L it -RFBdq -c 'gsh systemconfig; for _ in $$(seq 50); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
 
+## run the continue/language regression tests (isolated sandbox, no archive needed)
+test-continue-lang:
+	sh tests/test_continue_language.sh
+
 clean:
 	rm -rf i18n/*~ locale gameshell gameshell.tar gameshell.tgz gameshell.sh gameshell-save*.sh scripts/boxes-data.awk
 	rm -rf .bin .config .sbin .tmp .save World
 	rm -rf "game shell"*
 
-.PHONY: clean new FORCE
+.PHONY: clean new FORCE test-continue-lang

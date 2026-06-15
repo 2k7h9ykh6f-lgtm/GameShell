@@ -258,6 +258,30 @@ progress_finish() {
 }
 
 
+# When continuing an existing game with an explicit -L option, persist the new
+# language / gettext choice into the saved configuration so that `gsh goal`,
+# mission texts and the next save use it (instead of the language stored in the
+# previous savefile). Without -L, the configuration is left untouched.
+_gsh_save_language_config() {
+  local config="$GSH_CONFIG/config.sh"
+  [ -f "$config" ] || return 0
+
+  # drop the language-related lines we manage, so the previous value can no
+  # longer override the new choice and we don't accumulate duplicates
+  sed-i '/^LANGUAGE=/d;/^export LANGUAGE=/d;/^GSH_NO_GETTEXT=/d;/^export GSH_NO_GETTEXT=/d;/^unset GSH_NO_GETTEXT$/d' "$config"
+
+  if [ -n "$GSH_NO_GETTEXT" ]
+  then
+    # `-L` without an argument: disable gettext (English only)
+    echo "export GSH_NO_GETTEXT=1" >> "$config"
+  else
+    # `-L <lang>`: switch the game language and make sure gettext stays enabled
+    echo "export LANGUAGE=$LANGUAGE" >> "$config"
+    echo "unset GSH_NO_GETTEXT" >> "$config"
+  fi
+}
+
+
 init_gsh() {
 
   ADMIN_SALT='EsULESDXKFpLRjZcIRiVnazJfQcwQDEz'            # a random (but fixed) salt
@@ -294,12 +318,26 @@ Do you want to remove it and start a new game? [y/N]') "
 
   if [ "$RESET" = FALSE ]
   then
-    if [ "$#" -gt 0 ] || [ "$GSH_EXPLICIT_LANGUAGE" = true ]
+    if [ "$#" -gt 0 ]
     then
       args=$*
-      [ "$#" -gt 0 ] && echo "$(eval_gettext 'Warning: command line arguments are ignored when continuing a game ($args)')" >&2
-      args=$LANGUAGE
-      [ "$GSH_EXPLICIT_LANGUAGE" = true ] &&  echo "$(eval_gettext 'Warning: language is ignored when continuing a game ($args)')" >&2
+      echo "$(eval_gettext 'Warning: command line arguments are ignored when continuing a game ($args)')" >&2
+    fi
+    if [ "$GSH_EXPLICIT_LANGUAGE" = true ]
+    then
+      # honor an explicit -L when continuing: persist the new language / gettext
+      # choice so that `gsh goal`, mission texts and the next save use it
+      _gsh_save_language_config
+      if [ -n "$GSH_NO_GETTEXT" ]
+      then
+        echo "$(gettext 'Note: gettext is now disabled for this game (language set to English).')" >&2
+      else
+        args=$LANGUAGE
+        echo "$(eval_gettext 'Note: the language of this game is now set to $args.')" >&2
+      fi
+    fi
+    if [ "$#" -gt 0 ] || [ "$GSH_EXPLICIT_LANGUAGE" = true ]
+    then
       echo "$(gettext 'Press Enter to continue.')" >&2
       read -r _
     fi
