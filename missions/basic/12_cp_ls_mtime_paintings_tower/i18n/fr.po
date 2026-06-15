@@ -1,0 +1,44 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Castle/Main_tower/First_floor"
+msgstr  "$GSH_HOME/Chateau/Donjon/Premier_etage"
+
+#, sh-format
+msgid   "$GSH_HOME/Forest/Hut/Chest"
+msgstr  "$GSH_HOME/Foret/Hutte/Coffre"
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  "$MISSION_DIR/goal/fr.txt"
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  "$MISSION_DIR/skip/fr.txt"
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  "$MISSION_DIR/treasure-msg/fr.txt"
+
+msgid   "Problem with generation of random filename!"
+msgstr  "Problème lors de la génération d'un nom de fichier aléatoire !"
+
+msgid   "The painting in your chest is invalid..."
+msgstr  "Le tableau de votre coffre est invalide..."
+
+msgid   "The painting is not in the tower anymore..."
+msgstr  "Le tableau n'est plus dans le donjon..."
+
+msgid   "The painting is not in your chest..."
+msgstr  "Le tableau n'est pas dans votre coffre..."
+
+msgid   "There are too many paintings in your chest..."
+msgstr  "Il y a trop de tableaux dans votre coffre..."
+
+msgid   "There is no painting in your chest..."
+msgstr  "Il n'y a pas de tableau dans votre coffre..."
+
+msgid   "painting"
+msgstr  "tableau"

@@ -1,0 +1,45 @@
+# AUTOMATICALLY GENERATED -- DO NOT EDIT
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Forest/Hut/Chest"
+msgstr  "$GSH_HOME/Forest/Hut/Chest"
+
+#, sh-format
+msgid   "$GSH_HOME/Garden"
+msgstr  "$GSH_HOME/Garden"
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  "$MISSION_DIR/goal/en.txt"
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  "$MISSION_DIR/skip/en.txt"
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  "$MISSION_DIR/treasure-msg/en.txt"
+
+#, sh-format
+msgid   "The coin '$coin_name' has been tampered with..."
+msgstr  "The coin '$coin_name' has been tampered with..."
+
+#, sh-format
+msgid   "The coin '$coin_name' is not in the chest!"
+msgstr  "The coin '$coin_name' is not in the chest!"
+
+#, sh-format
+msgid   "The coin '$coin_name' is still in the garden!"
+msgstr  "The coin '$coin_name' is still in the garden!"
+
+msgid   "chest"
+msgstr  "chest"
+
+msgid   "coin"
+msgstr  "coin"
+
+msgid   "hut"
+msgstr  "hut"

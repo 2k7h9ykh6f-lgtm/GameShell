@@ -1,0 +1,47 @@
+name: "Latest game archive"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  pre-release:
+    name: "latest release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout source code"
+        uses: "actions/checkout@v4"
+        with:
+          fetch-depth: 0
+
+      - name: "Install Linux deps"
+        run: |
+          sudo apt install gettext git
+
+      - name: "Creating the archive"
+        run: |
+          git fetch --tags --force
+          ./utils/gameshell_archive.sh
+
+      - name: "Create or move 'latest' tag"
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag -f latest
+          git push origin latest --force
+
+      - name: "Create GitHub Release"
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest game archive"
+          prerelease: true
+          files: |
+            LICENSE
+            gameshell.sh
+            Dockerfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

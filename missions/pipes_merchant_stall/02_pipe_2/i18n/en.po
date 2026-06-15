@@ -1,0 +1,39 @@
+# AUTOMATICALLY GENERATED -- DO NOT EDIT
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Stall"
+msgstr  "$GSH_HOME/Stall"
+
+# path for the text file containing the goal
+msgid   "$MISSION_DIR/goal/en.txt"
+msgstr  "$MISSION_DIR/goal/en.txt"
+
+# path for the text file containing the skip message
+msgid   "$MISSION_DIR/skip/en.txt"
+msgstr  "$MISSION_DIR/skip/en.txt"
+
+# path for the text file containing the treasure message
+msgid   "$MISSION_DIR/treasure-msg/en.txt"
+msgstr  "$MISSION_DIR/treasure-msg/en.txt"
+
+msgid   "How many unpaid items are there?"
+msgstr  "How many unpaid items are there?"
+
+msgid   "PAID"
+msgstr  "PAID"
+
+msgid   "That's not the right answer!"
+msgstr  "That's not the right answer!"
+
+#, sh-format
+msgid   "That's the right answer, but you used $nb_cmd commands!"
+msgstr  "That's the right answer, but you used $nb_cmd commands!"
+
+#, sh-format
+msgid   "The script 'generate_merchant_stall.sh' is necessary for mission $MISSION_NAME.\n"
+        "Make sure the corresponding mission is included."
+msgstr  "The script 'generate_merchant_stall.sh' is necessary for mission $MISSION_NAME.\n"
+        "Make sure the corresponding mission is included."

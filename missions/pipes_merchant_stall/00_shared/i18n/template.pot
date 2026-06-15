@@ -1,0 +1,31 @@
+msgid   ""
+msgstr  "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#, sh-format
+msgid   "$GSH_HOME/Stall"
+msgstr  ""
+
+msgid   "%s bought %s for %d coppers%s"
+msgstr  ""
+
+msgid   "PAID"
+msgstr  ""
+
+msgid   "boring_object"
+msgstr  ""
+
+msgid   "firstnames.en"
+msgstr  ""
+
+msgid   "lastnames.en"
+msgstr  ""
+
+msgid   "objects.en"
+msgstr  ""
+
+msgid   "s_c_r_o_l_l"
+msgstr  ""
+
+msgid   "the King"
+msgstr  ""
